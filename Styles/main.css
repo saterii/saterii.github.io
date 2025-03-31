@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+html{
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    color: white;
+    height: 100vh;
+    margin: 0;
+}
+body{
+    height: 100%;
+    margin: 0;
+    background-color: #1A1A1D;
+    overflow-y: auto;
+}
+
+h1{
+    margin-bottom: 0;
+    text-align: center;
+}
+h3{
+    font-size: 3em;
+}
+
+.ntext{
+    font-size: 1em;
+}
+nav{
+    margin: 0;
+    padding: 0;
+    background-color: none;
+    position: absolute;
+    right: 0;
+}
+.navtext{
+    padding: 1em;
+    font-size: 1.25em;
+}
+.nametext{
+    padding-left: 2em;
+    left: 0;
+    position: fixed;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#info, #exp, #portfolio{
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5em;
+    font-size: 1.25em;;
+}
+#exp{
+    margin-top: 0;
+}
+#portfolio{
+    margin-top: 3.5em;
+    width: 80%;
+}
+.sticky {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+    transition: 0.5s;
+}
+.bannerpic{
+    background-image: url("../Images/maisema3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.navlinks {
+    width: max-content;
+    padding: 20px 0 20px 0;
+    float: right;
+}
+.navtext, .navtext:active, .nametext, .nametext:active{
+    color: black;
+    text-decoration: none;
+}
+.navtext:hover{
+    text-decoration: underline;
+}
+.nametext:hover{
+    font-weight:900;
+}
+footer{
+    background-color: #6F2232;
+    padding: 1em 5em 5em 5em;
+    height: 200px;
+    margin-top: 3em;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+#third{
+    margin-bottom: 95px;
+}
+.rightnav{
+    width: 50%;
+    display: inline;
+    margin-right: 2em;
+}
+.box_left{
+    margin-left: 10%;
+    display: block;
+    float: left;
+    text-align: left;
+}
+.box_right{
+    margin-right: 10%;
+    float: right;
+    display: inline;
+    text-align: center;
+    overflow: hidden;
+}
+.somelogo{
+    padding: 0.5em;
+}
+.langtext{
+    text-decoration: none;
+    color: black;
+    font-size: 1.25em;
+    margin: 0 0.1em 0 0.1em;
+}
+.langtext:hover{
+    text-decoration: underline;
+}
+.active{
+    text-decoration: underline;
+}
+.namebox{
+    position: absolute;
+    right: 0;
+    top: 32%;
+    width: 50%;
+    text-align: center;
+    color: black;
+}
+.headertext{
+    font-size: 1.5em;
+    margin-bottom: 2em;
+}
+.headerlink{
+    background-color: white;
+    color: black;
+    padding: 0.5em 0.75em;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.pfbox{
+    width: 100%;
+    background-color: white;
+    display: block;
+    float: left;
+    border-radius: 1em;
+    padding: 0;
+    margin: 1em;
+    background-color: #C3073F;
+}
+.boxes{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.pfimage{
+    border-radius: 1em 0 0 1em;
+    float: left;
+    max-width: 290px;
+    width: 30%;
+    height: 100%;
+}
+h4{
+    float: left;
+    margin-left: 1em;
+    display: block;
+    font-size: 100%;
+}
+.pflink{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    float: left;
+    font-size: 0.8em;
+    margin-left: 1em;
+    padding: 0.5em 1em 0.5em 1em;
+}
+.pflink:hover{
+    border: 0.15em solid white;
+    margin-left: 0.925em;
+    padding: 0.45em 0.95em 0.45em 0.95em;
+}
+.pfp{
+    display: none;
+}
+.extra{
+    margin-left: 0.6em;
+    margin-bottom: 0.5em;
+}
+.mobilelang{
+    display: none;
+}
+
+.exps{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.pfimage{height: 256px; width: 256px; background-color: black;}
+
+.exps > table{
+
+}
+
+@media only screen and (max-width: 1000px){
+    html{
+        margin: 0;
+    }
+    .bannerpic{
+        background-image: none;
+        background-color: #C3073F;
+        width: 100vw;
+        height: max-content;
+        margin: 0;
+    }
+    .pfp{
+        display: block;
+        background-image: url("../Images/omakuva.JPG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 1em auto;
+        border-radius: 50em;
+        height: 70vw;
+        width: 70vw;
+        border: 2px solid black;
+        margin-bottom: 3em;
+    }
+    .namebox{
+        position: relative;
+        width: 100vw;
+        height: 95vh;
+        padding: 0;
+        padding-top: 35vh;
+    }
+    body {
+        width: 100vw;
+        margin: 0;
+      }
+    h1{
+        text-align: center;
+        margin-bottom: 0.75em;
+        max-width: 100vw;
+    }
+    p{
+        margin: 0;
+    }
+    .pfimage{
+        height: auto;
+        min-width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 1em 1em 0 0;
+        margin: 0;
+        padding: 0;
+    }
+    .pfbox{
+        padding: 0;
+        text-align: center;
+        display: block;
+        margin-left: 0;
+    }
+    h4{
+        margin: 1em;
+    }
+    .pflinks{
+        float:none;
+        width: max-content;
+        text-align: center;
+        margin: 1em auto;
+    }
+    .pflink{
+        margin: 0 0.5em 1em;
+    }
+    footer{
+        width: 100%;
+        height: min-content;
+        margin-bottom: 0;
+    }
+    .box_left, .box_right{
+        float: none;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    nav{
+        display: none;
+    }
+    #info, #exp, #portfolio{
+        width: 100%;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-top: 2em;
+        padding-bottom: 0;
+        margin: 0;
+    }
+    .extra{
+        margin: 0;
+    }
+    h2{
+        text-align: center;
+    }#third{
+        margin-bottom: 0;
+    }
+    h3{
+        margin-top: 0;
+    }
+    .headerlink{
+        position: relative;
+        
+    }
+    .mobilelang{
+        display: block;
+        float: none;
+        height: 5vh;
+        padding-top: 1em;
+        text-align: right;
+        margin-right: 1em;
+    }
+    .langtext{
+        background-color: white;
+        color: black;
+        padding: 0.5em 0.75em;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width: 1475px){
+    nav{
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        z-index: 10;
+        transition: 0.5s;
+    }
+}
+@media only screen and (max-width: 1250px) and (min-width: 1000px){
+    .py{
+        font-size: 0.95em;
+        transition: 0.5s;
+    }
+
+}
+@media only screen and (max-width: 1200px) and (min-width: 1000px){
+    .py{
+        font-size: 0.90em;
+        transition: 0.5s;
+    }
+}
+@media only screen and (max-width: 1150px) and (min-width: 1000px){
+    .py{
+        font-size: 0.85em;
+        transition: 0.5s;
+    }
+    .dt{
+        font-size: 0.9em;
+        transition: 0.5s;
+    }
+    .ff{
+        font-size: 0.95em;
+        transition: 0.5s;
+    }
+}
+@media only screen and (max-width: 1065px) and (min-width: 1000px){
+    .py{
+        font-size: 0.78em;
+        transition: 0.5s;
+    }
+    .dt{
+        font-size: 0.85em;
+        transition: 0.5s;
+    }
+    .ff{
+        font-size: 0.88em;
+        transition: 0.5s;
+    }
+}
