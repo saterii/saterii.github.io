@@ -214,13 +214,13 @@ h4{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
 
 }
+
+
 .pfimage{height: 256px; width: 256px; background-color: black;}
 
-.exps > table{
-
-}
 
 @media only screen and (max-width: 1000px){
     html{
@@ -394,5 +394,19 @@ h4{
     .ff{
         font-size: 0.88em;
         transition: 0.5s;
+    }
+}
+@media only screen and (max-width: 520px){
+    .exps > ul{
+        
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .exps{
+        
+        
+        text-align: left;
+        display: block;
     }
 }
